@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niece Eliza Focus Timer</title>
+    <link rel = 'stylesheet' href = 'style.css'>
+    <link rel = 'icon' type = 'image/x-icon' href = 'favicon.jpg'>
+    <audio id = 'tickAudio' src = 'tick.mp3' preload = 'audo'></audio>
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'header-container'>
+            <h1>Niece Eliza Focus Timer</h1>
+        </div>
+        <div class = 'timer-container'>
+            <h2 id = 'intervalType'>Focus</h2>
+            <h1 id = 'timerDisplay'>25:00</h1>
+            <div id = 'statusBar' class = 'status-bar'></div>
+        </div>
+        <div class = 'interval-container'>
+            <div class = 'focus-interval-container'>
+                <div>
+                    <h4>Focus Interval Minutes: </h4>
+                </div>
+                <div>
+                    <button id = 'decreaseFocus' onclick = 'decreaseFocusTime()'>-</button> <span id = 'focusTimeDisplay'>25</span> <button id = 'increaseFocus' onclick = 'increaseFocusTime()'>+</button>
+                </div>
+            </div>
+            <div class = 'break-interval-container'>
+                <div>
+                    <h4>Break Interval Minutes: </h4>
+                </div>
+                <div>
+                    <button id = 'decreaseBreak' onclick = 'decreaseBreakTime()'>-</button> <span id = 'breakTimeDisplay'>5</span> <button id = 'increaseBreak' onclick = 'increaseBreakTime()'>+</button>
+                </div>
+            </div>            
+        </div>
+        <div class = 'button-container'>
+            <button id = 'startBtn' onclick = 'toggleTimer()'>Start</button>
+            <button id = 'pauseBtn' onclick = 'pauseTimer()'>Pause</button>
+            <button id = 'resetBtn' onclick = 'resetTimer()'>Reset</button>
+        </div>
+    </div>
+
+    <script src = 'app.js'></script>
+</body>
+</html>
